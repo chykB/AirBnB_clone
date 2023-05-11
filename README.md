@@ -1,1 +1,1 @@
-AirBnB_clone
+This is our teams AirBnB_clone project
