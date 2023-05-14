@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Test Suite for FileStorage in models/file_storage.py"""
 import os.path
 import unittest
@@ -170,3 +171,31 @@ class TestStorageMethods(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+=======
+"""
+Test for storage
+"""
+from datetime import datetime
+import unittest
+from time import sleep
+import json
+from models.engine.file_storage import FileStorage
+
+
+class test_fileStorage(unittest.TestCase):
+    """Test FileStorage Class"""
+    def test_instances(self):
+        """chequeamos instantation"""
+        obj = FileStorage()
+        self.assertIsInstance(obj, FileStorage)
+
+    def test_docs(self):
+        """Test docstrings"""
+        self.assertIsNotNone(FileStorage.all)
+        self.assertIsNotNone(FileStorage.new)
+        self.assertIsNotNone(FileStorage.save)
+        self.assertIsNotNone(FileStorage.reload)
+
+    if __name__ == '__main__':
+        unittest.main()
+>>>>>>> 8b93a145d511c2a06b597e8d5ef4a873e261dcc6
